@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp3.MainPage">
+
+    <ScrollView>
+        <Grid Margin="20,20,20,20" RowSpacing="60">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Rectangle Grid.Row="0" BackgroundColor="White"></Rectangle>
+
+            <Label Grid.Row="1" BackgroundColor="DarkGray">
+                <Label.Text>
+1. Wait a few seconds, there are video elements below that are loading.
+2. Try Scrolling Down (It shouldn't work.)
+3. Rotate the screen to landscape and back to portrait.
+4. Scrolling down should allow you to now see all 6 video elements.
+                </Label.Text>
+            </Label>
+
+            <Rectangle Grid.Row="2" BackgroundColor="White"></Rectangle>
+
+            <WebView x:Name="WebView1" Grid.Row="3">
+            </WebView>
+
+            <WebView x:Name="WebView2" Grid.Row="4">
+            </WebView>
+
+            <WebView x:Name="WebView3" Grid.Row="5">
+            </WebView>
+
+            <WebView x:Name="WebView4" Grid.Row="6">
+            </WebView>
+
+            <WebView x:Name="WebView5" Grid.Row="7">
+            </WebView>
+
+            <WebView x:Name="WebView6" Grid.Row="8">
+            </WebView>
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
